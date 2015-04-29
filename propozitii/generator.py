@@ -175,7 +175,7 @@ class GeneratorTabloid(GeneratorPropozitii):
         super().__init__('sintaxa_romana/tabloid.g')
 
 
-class GeneratorInsults(GeneratorPropozitii):
+class GeneratorInsult(GeneratorPropozitii):
     def __init__(self):
         super().__init__('sintaxa_engleza/insult.g')
 
@@ -183,6 +183,11 @@ class GeneratorInsults(GeneratorPropozitii):
 class GeneratorHaiku(GeneratorPropozitii):
     def __init__(self):
         super().__init__('sintaxa_engleza/haiku.g')
+
+
+class GeneratorBond(GeneratorPropozitii):
+    def __init__(self):
+        super().__init__('sintaxa_engleza/bond.g')
 
 if __name__ == '__main__':
     g = GeneratorTabloid()

@@ -14,4 +14,5 @@ class Generator:
     def genereaza(self):
         prenume = random.choice(self._lista_prenume)
         nume = random.choice(self._lista_nume)
-        return nume + '_' + prenume
+        self._lista_nume.remove(nume)  # sterge numele generat pentru a evita o potentiala dublare in baza de date
+        return prenume + ' ' + nume
